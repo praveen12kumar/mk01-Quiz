@@ -40,7 +40,7 @@ function play(question, answer, no) {
   console.log("Let's see your " + no + " question ");
   var currentAnswer = readlineSync.question(question);
 
-  if (currentAnswer.toLowerCase === answer.toLowerCase) {
+  if (currentAnswer.toLowerCase() === answer.toLowerCase()){
     score++;
     console.log("yeah you are right ");
   }
